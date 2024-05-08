@@ -40,7 +40,8 @@ while not stack.empty():
     print(f"Item removido da lista com sucesso: {last_item_list}\n")
     print(f"Lista: {stack.list}\n")
     t.sleep(0.1)
-´´´
+```
+
 Este exemplo demonstra como preencher uma pilha com números de 0 a 100, imprimir a pilha, aguardar por alguns segundos e então remover cada elemento da pilha e imprimir a pilha resultante.
 
 ## Requisitos de Instalação
@@ -49,7 +50,7 @@ Este exemplo demonstra como preencher uma pilha com números de 0 a 100, imprimi
 
 ## Autor
 
-Este código foi recriado por Ageu Felipe Nunes Moraes(eu) como parte de um projeto pessoal dedicado ao fortalecimento e amadurecimento da codificação. Para quaisquer dúvidas ou sugestões, por favor, entre em contato pelo e-mail [ageumoraes67@gmail.com].
+Este código foi desenvolvido por Ageu Felipe Nunes Moraes(eu) como parte de um projeto pessoal dedicado ao fortalecimento e amadurecimento da codificação. Para quaisquer dúvidas ou sugestões, por favor, entre em contato pelo e-mail [ageumoraes67@gmail.com].
 
 ## Aviso Legal
 
