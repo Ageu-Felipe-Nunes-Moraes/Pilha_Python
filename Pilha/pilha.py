@@ -1,42 +1,42 @@
 import time as t
 
-class Pilha:
+class Stack:
     def __init__(self):
-        self.lista = []
+        self.list = []
 
-    def vazia(self):
-        return len(self.lista) == 0
+    def empty(self):
+        return len(self.list) == 0
     
     def push(self, item):
-        self.lista.append(item)
+        self.list.append(item)
     
     def pop(self):
-        if not self.vazia():
-            self.lista.pop()
+        if not self.empty():
+            self.list.pop()
         else:
             raise IndexError("A lista está vazia")
         
-    def topo(self):
-        if not self.vazia():
-            return self.lista[-1]
+    def top(self):
+        if not self.empty():
+            return self.list[-1]
         else:
             return None
 
 
-pilha = Pilha()
+stack = Stack()
 
 for i in range(100+1):
-    pilha.push(i)
-    print(f"Lista: {pilha.lista}\n")
+    stack.push(i)
+    print(f"Lista: {stack.list}\n")
     t.sleep(0.1)
 
-print(f"Lista preenchida: {pilha.lista}\n")
+print(f"Lista preenchida: {stack.list}\n")
 print("Aguarde...")
 t.sleep(3)
 
-while not pilha.vazia():
-    ultimo_item_lista = pilha.topo()
-    pilha.pop()
-    print(f"Item removido da lista com sucesso: {ultimo_item_lista}\n")
-    print(f"Lista: {pilha.lista}\n")
+while not stack.empty():
+    last_item_list = stack.top()
+    stack.pop()
+    print(f"Item removido da lista com sucesso: {last_item_list}\n")
+    print(f"Lista: {stack.list}\n")
     t.sleep(0.1)
