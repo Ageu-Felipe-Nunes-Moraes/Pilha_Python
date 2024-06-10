@@ -1,57 +1,57 @@
-# Pilha - Implementação em Python
+# Stack - Python Implementation
 
-Este projeto consiste em uma implementação simples de uma pilha em Python. Uma pilha é uma estrutura de dados que segue o princípio "último a entrar, primeiro a sair" (LIFO - Last In, First Out), onde o último elemento adicionado é o primeiro a ser removido.
+This project consists of a simple stack implementation in Python. A stack is a data structure that follows the "Last In, First Out" (LIFO) principle, where the last element added is the first one to be removed.
 
-## Funcionalidades
+## Features
 
-- **Push:** Adiciona um item ao topo da pilha.
-- **Pop:** Remove o item do topo da pilha, se houver algum.
-- **Top:** Retorna o item do topo da pilha, sem removê-lo.
-- **Empty:** Permite verificar se a pilha está vazia.
+- **Push:** Adds an item to the top of the stack.
+- **Pop:** Removes the item from the top of the stack, if any.
+- **Top:** Returns the item at the top of the stack without removing it.
+- **Empty:** Checks if the stack is empty.
 
-## Como Usar
+## How to Use
 
-1. Instancie um objeto da classe `Pilha`.
-2. Adicione elementos à pilha usando o método `push(item)`.
-3. Remova elementos da pilha usando o método `pop()`.
-4. Consulte o elemento do topo da pilha sem removê-lo usando o método `top()`.
-5. Verifique se a pilha está vazia usando o método `empty()`.
+1. Instantiate an object of the `Stack` class.
+2. Add elements to the stack using the `push(item)` method.
+3. Remove elements from the stack using the `pop()` method.
+4. Peek at the top element of the stack without removing it using the `top()` method.
+5. Check if the stack is empty using the `empty()` method.
 
-## Exemplo de Uso
+## Usage Example
 
 ```python
-# Declare of the class
+# Declare the class
 stack = Stack()
 
-# Fills the list with 100 numbers
+# Fill the list with 100 numbers
 for i in range(100+1):
     stack.push(i)
-    print(f"Lista: {stack.list}\n")
+    print(f"List: {stack.list}\n")
     t.sleep(0.1)
 
-print(f"Lista preenchida: {stack.list}\n")
-print("Aguarde...")
+print(f"Filled list: {stack.list}\n")
+print("Please wait...")
 t.sleep(3)
 
 # Emptying the entire list
 while not stack.empty():
     last_item_list = stack.top()
     stack.pop()
-    print(f"Item removido da lista com sucesso: {last_item_list}\n")
-    print(f"Lista: {stack.list}\n")
+    print(f"Item successfully removed from the list: {last_item_list}\n")
+    print(f"List: {stack.list}\n")
     t.sleep(0.1)
 ```
 
-Este exemplo demonstra como preencher uma pilha com números de 0 a 100, imprimir a pilha, aguardar por alguns segundos e então remover cada elemento da pilha e imprimir a pilha resultante.
+This example demonstrates how to fill a stack with numbers from 0 to 100, print the stack, wait for a few seconds, and then remove each element from the stack while printing the resulting stack.
 
-## Requisitos de Instalação
+## Installation Requirements
 
 - Python 3.x
 
-## Autor
+## Author
 
-Este código foi desenvolvido por Ageu Felipe Nunes Moraes(eu) como parte de um projeto pessoal dedicado ao fortalecimento e amadurecimento da codificação. Para quaisquer dúvidas ou sugestões, por favor, entre em contato pelo e-mail [ageumoraes67@gmail.com].
+This code was developed by Ageu Felipe Nunes Moraes (myself) as part of a personal project dedicated to strengthening and maturing coding skills. For any questions or suggestions, please contact me at [ageumoraes67@gmail.com](mailto:ageumoraes67@gmail.com).
 
-## Aviso Legal
+## Disclaimer
 
-Este é um projeto de software desenvolvido por um indivíduo e não tem afiliação com outrem.
+This is a software project developed by an individual and is not affiliated with any other entity.
